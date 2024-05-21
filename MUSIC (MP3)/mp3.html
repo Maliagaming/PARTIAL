@@ -1,0 +1,56 @@
+document.addEventListener("DOMContentLoaded", function() {
+    // Create elements
+    var body = document.body;
+    var header = document.createElement("header");
+    var h1 = document.createElement("h1");
+    var divButtonContainer = document.createElement("div");
+    var button = document.createElement("button");
+    var main = document.createElement("main");
+    var ul = document.createElement("ul");
+    var footer = document.createElement("footer");
+
+    // Set attributes and styles
+    h1.textContent = "JOAN'S PLAYLIST";
+    header.appendChild(h1);
+
+    button.textContent = "Open Songs";
+    button.className = "control-button";
+    button.onclick = toggleSongs;
+    divButtonContainer.className = "button-container";
+    divButtonContainer.appendChild(button);
+    header.appendChild(divButtonContainer);
+
+    ul.id = "songList";
+    ul.style.listStyleType = "none";
+    ul.style.padding = "0";
+    ul.style.margin = "0 auto";
+    ul.style.maxWidth = "600px";
+    ul.style.animation = "slideInUp 1s ease";
+    ul.style.display = "none";
+    main.appendChild(ul);
+
+    footer.textContent = "Footer";
+    footer.style.backgroundColor = "rgba(139, 69, 19, 0.9)";
+    footer.style.color = "#fff";
+    footer.style.padding = "10px";
+    footer.style.textAlign = "center";
+    footer.style.position = "fixed";
+    footer.style.bottom = "0";
+    footer.style.width = "100%";
+    footer.style.animation = "fadeInUp 1s ease";
+
+    // Append elements to body
+    body.appendChild(header);
+    body.appendChild(main);
+    body.appendChild(footer);
+
+    // Function to toggle songs
+    function toggleSongs() {
+        var songList = document.getElementById("songList");
+        if (songList.style.display === "none") {
+            songList.style.display = "block";
+        } else {
+            songList.style.display = "none";
+        }
+    }
+});

@@ -1,0 +1,33 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>MP3 Website</title> 
+</head> 
+<body> 
+<header> 
+<h1>Welcome to our MP3 Website</h1>
+ </header> 
+<main> 
+ <section> 
+  <h2>Top Hits</h2>
+  <ul> 
+    <li><a href="song1.mp3" download>Song 1</a></li> 
+    <li><a href="song2.mp3" download>Song 2</a></li>
+    <li><a href="song3.mp3" download>Song 3</a></li> 
+</ul> 
+</section>
+<section> 
+ <h2>Latest Releases</h2>
+ <ul> 
+   <li><a href="song4.mp3" download>Song 4</a></li> 
+   <li><a href="song5.mp3" download>Song 5</a></li> <li><a href="song6.mp3" download>Song 6</a></li>
+ </ul> 
+</section>
+ </main> 
+<footer>
+ <p>&copy; 2024 MP3 Website. All rights reserved.</p> 
+</footer> 
+</body> 
+</html>
